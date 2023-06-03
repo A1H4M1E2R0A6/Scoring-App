@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="mainHeading">
+        <h1>Cricket Scorer</h1>
+    </header>
+    <div id="inputcontainer">
+        <div id="main">
+            <div id="submitter">
+                <div class="Team name">
+                    <h2>Team Name:</h2>
+                    <form class="teamname">
+                        <input name="teamname" type="text" placeholder="enter your team name">
+                        <button type="submit" hidden>submit</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="teamPlayersName">
+            <div class="squad">
+                <h2> Squad </h2>
+                <div class="Teamplayers">
+                    <label>Player Name:</label>
+                    <form class="playername">
+                        <input name="playername" type="text" placeholder="enter your player name">
+                        <button type="submit" hidden>submit</button>
+                    </form>
+                    <div class="Teamplayers">
+                        <label>Player Name:</label>
+                        <form class="playername">
+                            <input name="playername" type="text" placeholder="enter your player name">
+                            <button type="submit" hidden>submit</button>
+                        </form>
+                        <div class="Teamplayers">
+                            <label>Player Name:</label>
+                            <form class="playername">
+                                <input name="playername" type="text" placeholder="enter your player name">
+                                <button type="submit" hidden>submit</button>
+                            </form>
+                            <div class="Teamplayers">
+                                <label>Player Name:</label>
+                                <form class="playername">
+                                    <input name="playername" type="text" placeholder="enter your player name">
+                                    <button type="submit" hidden>submit</button>
+                                </form>
+                                <div class="Teamplayers">
+                                    <label>Player Name:</label>
+                                    <form class="playername">
+                                        <input name="playername" type="text" placeholder="enter your player name">
+                                        <button type="submit" hidden>submit</button>
+                                    </form>
+                                    <div class="Teamplayers">
+                                        <label>Player Name:</label>
+                                        <form class="playername">
+                                            <input name="playername" type="text" placeholder="enter your player name">
+                                            <button type="submit" hidden>submit</button>
+                                        </form>
+                                        <div class="Teamplayers">
+                                            <label>Player Name:</label>
+                                            <form class="playername">
+                                                <input name="playername" type="text"
+                                                    placeholder="enter your player name">
+                                                <button type="submit" hidden>submit</button>
+                                            </form>
+                                            <div class="Teamplayers">
+                                                <label>Player Name:</label>
+                                                <form class="playername">
+                                                    <input name="playername" type="text"
+                                                        placeholder="enter your player name">
+                                                    <button type="submit" hidden>submit</button>
+                                                </form>
+                                                <div class="Teamplayers">
+                                                    <label>Player Name:</label>
+                                                    <form class="playername">
+                                                        <input name="playername" type="text"
+                                                            placeholder="enter your player name">
+                                                        <button type="submit" hidden>submit</button>
+                                                    </form>
+                                                    <div class="Teamplayers">
+                                                        <label>Player Name:</label>
+                                                        <form class="playername">
+                                                            <input name="playername" type="text"
+                                                                placeholder="enter your player name">
+                                                            <button type="submit" hidden>submit</button>
+                                                        </form>
+                                                        <div class="Teamplayers">
+                                                            <label>Player Name:</label>
+                                                            <form class="playername">
+                                                                <input name="playername" type="text"
+                                                                    placeholder="enter your player name">
+                                                                <button type="submit" hidden>submit</button>
+                                                            </form>
+                                                            <div class="Teamplayers">
+                                                                <label>Player Name:</label>
+                                                                <form class="playername">
+                                                                    <input name="playername" type="text"
+                                                                        placeholder="enter your player name">
+                                                                    <button type="submit" hidden>submit</button>
+                                                                </form>
+                                                                <div class="Teamplayers">
+                                                                    <label>Player Name:</label>
+                                                                    <form class="playername">
+                                                                        <input name="playername" type="text"
+                                                                            placeholder="enter your player name">
+                                                                        <button type="submit" hidden>submit</button>
+                                                                    </form>
+                                                                    <div class="Teamplayers">
+                                                                        <label>Player Name:</label>
+                                                                        <form class="playername">
+                                                                            <input name="playername" type="text"
+                                                                                placeholder="enter your player name">
+                                                                            <button type="submit" hidden>submit</button>
+                                                                        </form>
+                                                                        <div class="Teamplayers">
+                                                                            <label>Player Name:</label>
+                                                                            <form class="playername">
+                                                                                <input name="playername" type="text"
+                                                                                    placeholder="enter your player name">
+                                                                                <button type="submit"
+                                                                                    hidden>submit</button>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                let div = document.createElement("div")
+                                                                div.setAttribute("draggable", "true")
+                                                                div.setAttribute("class", "playername")
+                                                                let t = document.createTextNode(userInput);
+                                                                div.appendChild(t);
+                                                                let newPlayer= event.target.parentNode;
+                                                                console.log(".squad: ", squad);
+                                                                const colTitle = event.target.parentNode.children[0].innerText
+                                                                if (!existingTicketObj[colTitle]) {
+                                                                    existingTicketObj[colTitle] = [];
+                                                                }
+                                                                existingTicketObj[colTitle].push(userInput);{
+                                                                localStorage.setItem("tickets", JSON.stringify(existingTicketObj));
+                                                                event.target.reset();
+                                                                console.log("submit");
+                                                            }
+                                                            </script>
+</body>
+
+</html>

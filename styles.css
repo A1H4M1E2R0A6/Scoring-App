@@ -1,0 +1,11 @@
+#mainHeading{
+background-color: darkslategrey;
+text-align: center;
+padding-top: 0.7rem;
+padding-bottom: 0.7rem;
+font-size: large;
+font-weight: 200;
+}
+#inputcontainer{
+  background-color: blanchedalmond;
+}
